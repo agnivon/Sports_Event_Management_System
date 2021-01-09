@@ -1,0 +1,24 @@
+.select{
+  padding:5px 12px;
+  color: #333333;
+  
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select:focus,
+.select:hover{
+  outline: none;
+  border: 1px solid #bbbbbb;
+}
+
+th {
+   background-color: #f0ad4e;
+}
+
+table{
+  background-color: #f8f1f1;
+  margin:0;
+  padding:15%;
+}
