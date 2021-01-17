@@ -12,7 +12,7 @@
  ?>
 
  <!-- dataentry area -->
-<section id='NewAthlete'>
+<section id='InsertData'>
   <div class="row m-0">
     <div class="col-md-6">
       <div class="text-center pb-5">
@@ -22,7 +22,7 @@
         </div>
 
       <div class="d-flex justify-content-center" id="NewEntry">
-    <form action="ProcessInsertData.php" method="post" enctype="multipart/form-data" id="NewAthlete-form">
+    <form action="ProcessInsertData.php" method="post" enctype="multipart/form-data" id="InsertData-form">
       <?php
         while($row = $result->fetch_array()) {
             $fieldname = $row['Field'];

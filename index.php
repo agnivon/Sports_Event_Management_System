@@ -8,7 +8,7 @@ session_start();
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
    <a class="navbar-brand" href="#">Olympics</a>
 </nav>
-<section id='Viewindex'>
+<section id='index'>
   <div class="row m-0">
     <div class="col-md-6">
       <div class="text-center pb-5">

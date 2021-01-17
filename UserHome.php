@@ -18,7 +18,7 @@
   ?>
     </nav>
 
-<section id='Viewindex'>
+<section id='UserHome'>
   <div class="row m-0">
     <div class="col-md-6">
       <div class="text-center pb-5">

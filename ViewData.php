@@ -89,15 +89,34 @@
               }else{
                 echo "<tr><td>No Results found!</td></tr>";
               }
-            $con->close();
         ?>
      </table>
+     <?php
+          if($tablename == "sponsor"){
+            echo '<table class="table table-striped table-hover table-active align-middle; ">
+            <tr>
+              <th>Money Invested</th>';
+             $sql="CALL TSponAmt()";
+             $result=$con->query($sql);
+             if($result->num_rows>0){
+               while($row=$result->fetch_assoc()){
+                 echo"<th>".$row["SUM(Sponsorship_Amount)"]."</th></tr>";
+               }
+             }
+             else{
+               echo "Table is empty";
+             }
+            echo '</table>';
+          }
+        ?>
      <form action="InsertData.php" enctype="multipart/form-data" >
        <div class="submit-btn text-right my-5">
               <?php
-                echo sprintf('<button type="submit" class="btn btn-warning rounded-pill text-dark px-5" name="tablename" value="%s">
-                    New Entry
-                </button>', $tablename);
+                if($_SESSION["ADMIN"] == "true"){
+                  echo sprintf('<button type="submit" class="btn btn-warning rounded-pill text-dark px-5" name="tablename" value="%s">
+                      New Entry
+                  </button>', $tablename);
+                }
               ?>
        </div>
      </form>

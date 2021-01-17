@@ -63,7 +63,7 @@ include('header.php');
 </div>
     </div>
     <div class="col-md-6 ">
-      <img src= "./assets./Register.jpg" width="339" height="500"
+      <img src= "./assets/Register.jpg" width="339" height="500"
       alt="Backgroundimage"
       align="right"
       style="width=100%;height=100%;border-radius:4%;">

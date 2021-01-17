@@ -36,7 +36,7 @@ include "helper.php";
           </div>
       </div>
       <div class="col-md-6 ">
-        <img src= "./assets/OlympicGold.jpg"
+        <img src= "./assets/OlympicGold.jpg" width="339" height="500"
         alt="Backgroundimage"
         align="right"
         style="width=100%;height=100%;border-radius:4%;">
