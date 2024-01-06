@@ -1,4 +1,4 @@
-ABSTRACT
+#ABSTRACT
 In the emerging world of technology, every system is computerized and is available
 online. The traditional way of storing the records of sporting events is also now
 computerized. The SEMS is a web portal where users can view events details by choice.
