@@ -5,3 +5,18 @@ In the emerging world of technology, every system is computerized and is availab
 # INTRODUCTION
 
 The SEMS site is an online platform that works with the event data. The SEMS website is an online platform that helps users to view SEMS data. The database schema is designed to meet the requirements of the SEMS site. The portal consists of Athlete, Country, Event, Record, Result and sponsor module. Athlete module is where the users can view the athlete details. The Event module is where they can view the details of the different events present. The Country module is where they can view the details of the countries present in the sporting events. The Result module is where they can view the results of every event. The Record module is where they can view the world records. The Sponsor module is where they can view the different sponsors and the money invested on the athletes.
+
+# SYSTEM REQUIREMENT
+One of the most difficult tasks is that, the selection of the software, once system requirement is known is determining whether a software package fits the requirements. After initial selection further security is needed to determine the desirability of software compared with other candidates. This section first summarizes the application requirement question and then suggests more detailed comparisons.
+
+
+## (i)	HARDWARE REQUIREMENT
+1.	32/64-bit processor
+2.	i3 or greater intel processor chip
+3.	1.7 or more GHz processor
+
+## (ii)	SOFTWARE REQUIREMENT
+1.	Windows 7 or higher version OS
+2.	Google chrome 7.0 or greater
+3.	XAMPP web server
+4.	Microsoft Visual Studio Code
