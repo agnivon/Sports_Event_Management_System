@@ -4,33 +4,6 @@ ABSTRACT
 In the emerging world of technology, every system is computerized and is available online. The traditional way of storing the records of sporting events is also now computerized. The SEMS is a web portal where users can view events details by choice. The main objective of this application is to maintain records of the events and allow easy access in viewing and retrieving specific records on requirement. It aims to avoid the overhead of maintaining physical records which are prone to wear and tear, not easily editable and not secure. The SEMS website can store the information about a large number of athletes, events, their result and much more. The business point of view focuses on selling the athletes profile to sponsors. The user who is just a curious enthusiast wanting to know more about the sporting events or a potential sponsor can view the records and retrieve specific information based on his/her choice. The portal is aimed at providing accurate and latest information to all its users in a secure manner.
  
 
-TABLE OF CONTENTS
-CHAPTERS	PAGE NO.
-Chapter 1	Introduction	1
-Chapter 2	System Requirement	2
-2.1	Hardware Requirements	2
-2.2	Software Requirements	2
-Chapter 3	Problem Description	3
-Chapter 4	System Design	4
-4.1	ER Diagram	4
-4.2	Schema Diagram	5
-Chapter 5	Implementation	6
-5.1	Table Description	6
-5.2	Source code	13
-5.3	SQL Trigger	38
-5.4	SQL Stored Procedure	39
-Chapter 6	Results & Screenshots	40
-Chapter 7	Conclusion and Future Scope	44
-References	45
- 
-LIST OF FIGURES
-
-
-
-
-
-Fig Number	Fig Name	Chapter No	Page
-
 3.1	
 ER Diagram	
 1	
