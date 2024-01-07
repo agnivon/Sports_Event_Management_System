@@ -38,6 +38,6 @@ The objective of this project is to:
 
 ## ER DIAGRAM:
 ![image](https://github.com/agnivon/SEMS/assets/122620788/c05a5d87-4256-45fd-8460-a530cfae6238)<br>
-<div style="text-align: center;" markdown="1">Fig 3.1 ER Diagram</div>
+<h3 style="text-align: center;" markdown="1">Fig 3.1 ER Diagram</h3>
 
 
