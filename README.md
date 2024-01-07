@@ -27,7 +27,7 @@ One of the most difficult tasks is that, the selection of the software, once sys
 Storing and maintaining a physical copy of the records of athletic events is a tedious and time-consuming process. Over the years as it becomes very large it becomes difficult to maintain. The data in these physical copies is prone to wear and tear and can be easily tampered with. Searching for specific pieces of information in these large physical copies is not only difficult but also time consuming.
 The objective of this project is to:
 
-●	Maintain a digital record of the athletes and events in athletic events.
-●	Easily view the different tables.
-●	Easily retrieve specific details.
-●	Easily insert and update and different values in the table.
+●	Maintain a digital record of the athletes and events in athletic events.<br>
+●	Easily view the different tables.<br>
+●	Easily retrieve specific details.<br>
+●	Easily insert and update and different values in the table.<br>
