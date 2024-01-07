@@ -31,3 +31,13 @@ The objective of this project is to:
 ●	Easily view the different tables.<br>
 ●	Easily retrieve specific details.<br>
 ●	Easily insert and update and different values in the table.<br>
+
+# SYSTEM DESIGN
+ 
+
+
+## ER DIAGRAM:
+![image](https://github.com/agnivon/SEMS/assets/122620788/c05a5d87-4256-45fd-8460-a530cfae6238)<br>
+Fig 3.1 ER Diagram
+
+
