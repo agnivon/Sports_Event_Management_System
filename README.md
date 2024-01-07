@@ -38,6 +38,9 @@ The objective of this project is to:
 
 ## ER DIAGRAM:
 ![image](https://github.com/agnivon/SEMS/assets/122620788/c05a5d87-4256-45fd-8460-a530cfae6238)<br>
-<p style="text-align: center;">Fig 3.1 ER Diagram</p>
+
+## SCHEMA DIAGRAM:
+![image](https://github.com/agnivon/SEMS/assets/122620788/dc7fee32-2719-4bb5-90c1-573bac83de3d)<br>
+
 
 
