@@ -67,8 +67,9 @@ ADD KEY `CountryForKey` (`Country_Code`) USING BTREE; ALTER TABLE `athlete`
 MODIFY `Athlete_Id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;  
 ALTER TABLE `athlete`  
 ADD CONSTRAINT `Athlete_CountryForKey` FOREIGN KEY (`Country_Code`) REFERENCES `country` (`Country_Code`) ON DELETE SET NULL ON UPDATE NO ACTION;    
-
+<br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/6bd03732-5ead-4351-8450-139473a7a289)<br>
+<br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/2cd62bea-8794-4db4-a53b-aa9ea7c2f40c)<br>
 
 
