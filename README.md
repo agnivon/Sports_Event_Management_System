@@ -42,5 +42,35 @@ The objective of this project is to:
 ## SCHEMA DIAGRAM:
 ![image](https://github.com/agnivon/SEMS/assets/122620788/dc7fee32-2719-4bb5-90c1-573bac83de3d)<br>
 
+# IMPLEMENTATION
+ 
+
+
+## TABLE DESCRIPTION:  
+
+ATHLETE TABLE:
+
+
+CREATE TABLE `athlete` (
+`Athlete_Id` int(4) NOT NULL,
+`Athlete_Name` varchar(20) NOT NULL,
+`Gender` char(1) NOT NULL,
+`DOB` date NOT NULL,
+`Country_Code` int(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+ALTER TABLE `athlete`
+ADD PRIMARY KEY (`Athlete_Id`),
+ADD KEY `CountryForKey` (`Country_Code`) USING BTREE; ALTER TABLE `athlete`
+MODIFY `Athlete_Id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+ALTER TABLE `athlete`
+ADD CONSTRAINT `Athlete_CountryForKey` FOREIGN KEY (`Country_Code`) REFERENCES `country` (`Country_Code`) ON DELETE SET NULL ON UPDATE NO ACTION;  
+
+![image](https://github.com/agnivon/SEMS/assets/122620788/6bd03732-5ead-4351-8450-139473a7a289)<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/2cd62bea-8794-4db4-a53b-aa9ea7c2f40c)<br>
+
+
+
 
 
