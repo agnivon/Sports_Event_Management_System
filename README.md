@@ -93,6 +93,7 @@ ALTER TABLE `event`
  
  
 ADD CONSTRAINT `Event_CountryForKey` FOREIGN KEY (`Country_Code`) REFERENCES `country` (`Country_Code`) ON DELETE SET NULL ON UPDATE NO ACTION;  
+<br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/311446d1-bd13-45f4-91cc-ab5a1c94591e)  
 <br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/d9044678-d37d-4c9e-942f-bad02dcf5b1b)  
