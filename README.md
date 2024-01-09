@@ -118,7 +118,6 @@ MODIFY `Country_Code` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 ![image](https://github.com/agnivon/SEMS/assets/122620788/1c303595-8a35-497c-af95-0b15aecfc3b3)  
 <br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/b5e4a7de-35d0-4d63-aba5-a7882dfcdac2)  
-<br>
 The country table contains all the details about all the countries which the athletes represent and the host countries for the events. The attributes consist of Country_Code, Country_Name and Continent.  
 
 RECORD TABLE:  
