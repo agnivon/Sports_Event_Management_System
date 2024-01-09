@@ -114,6 +114,30 @@ ADD PRIMARY KEY (`Country_Code`); ALTER TABLE `country`
  
  
 MODIFY `Country_Code` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/1c303595-8a35-497c-af95-0b15aecfc3b3)  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/b5e4a7de-35d0-4d63-aba5-a7882dfcdac2)  
+<br>
+The country table contains all the details about all the countries which the athletes represent and the host countries for the events. The attributes consist of Country_Code, Country_Name and Continent.  
+
+RECORD TABLE:  
+
+
+CREATE TABLE `record` (  
+`Result_Id` int(4) DEFAULT NULL,  
+`Event_Name` varchar(20) NOT NULL,  
+`Event_Type` char(1) NOT NULL,  
+`Athlete_Id` int(4) DEFAULT NULL,  
+ 
+ 
+`Record_Time` int(8) NOT NULL DEFAULT 99999999  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
+
+
+ALTER TABLE `record`  
+ADD PRIMARY KEY (`Event_Name`);  
+
 
 
 
