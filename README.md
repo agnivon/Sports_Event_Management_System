@@ -71,6 +71,51 @@ ADD CONSTRAINT `Athlete_CountryForKey` FOREIGN KEY (`Country_Code`) REFERENCES `
 ![image](https://github.com/agnivon/SEMS/assets/122620788/6bd03732-5ead-4351-8450-139473a7a289)<br>
 <br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/2cd62bea-8794-4db4-a53b-aa9ea7c2f40c)<br>
+The athlete table contains all basic information about the athletes participating in various events. The attributes are Athlete_Id, Athlete_Name, Gender, DOB and Country_Code.  
+
+EVENT TABLE:    
+
+CREATE TABLE `event` (  
+`Event_Id` int(4) NOT NULL,  
+`Event_Name` varchar(20) NOT NULL,  
+`Event_Date` date NOT NULL,  
+`Event_Type` char(1) NOT NULL,  
+`Venue` varchar(20) NOT NULL,  
+`Country_Code` int(3) DEFAULT NULL  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
+
+
+ALTER TABLE `event`  
+ADD PRIMARY KEY (`Event_Id`),  
+ADD KEY `CountryForKey` (`Country_Code`) USING BTREE; ALTER TABLE `event`    
+MODIFY `Event_Id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;  
+ALTER TABLE `event`  
+ 
+ 
+ADD CONSTRAINT `Event_CountryForKey` FOREIGN KEY (`Country_Code`) REFERENCES `country` (`Country_Code`) ON DELETE SET NULL ON UPDATE NO ACTION;  
+![image](https://github.com/agnivon/SEMS/assets/122620788/311446d1-bd13-45f4-91cc-ab5a1c94591e)  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/d9044678-d37d-4c9e-942f-bad02dcf5b1b)  
+The event table contains information about all the sporting events in major sports festivals and games. The attributes include Event_Id, Event_Name, Event_Date, Event_Type, Venue and Country_Code.  
+
+COUNTRY TABLE:  
+
+
+CREATE TABLE `country` (  
+`Country_Code` int(3) NOT NULL,  
+`Country_Name` varchar(20) NOT NULL,  
+`Continent` varchar(20) DEFAULT NULL  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
+
+
+ALTER TABLE `country`  
+ADD PRIMARY KEY (`Country_Code`); ALTER TABLE `country`  
+ 
+ 
+MODIFY `Country_Code` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;  
+
+
+
 
 
 
