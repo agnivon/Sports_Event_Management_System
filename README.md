@@ -136,6 +136,40 @@ CREATE TABLE `record` (
 
 ALTER TABLE `record`  
 ADD PRIMARY KEY (`Event_Name`);  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/3eee3ce0-ba5c-4467-833b-44e4da37c74e)  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/2c509728-6e24-4636-8155-a7b0c85dace7)  
+The record table consists of record-holding results of all the events conducted. Its attributes consist of Result_Id, Event_Name, Event_Type_ Athlete_Id and Record_Time.  
+
+RESULT TABLE:  
+
+
+CREATE TABLE `result` (  
+`Result_Id` int(4) NOT NULL,  
+`Event_Id` int(4) NOT NULL,  
+`Event_Name` varchar(20) NOT NULL,  
+`Athlete_Id` int(4) NOT NULL,  
+`Medal_Type` varchar(6) NOT NULL,  
+`Total_Time` int(8) NOT NULL  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
+
+
+ALTER TABLE `result`  
+ADD PRIMARY KEY (`Result_Id`), ADD KEY `EventForKey` (`Event_Id`),  
+ 
+ 
+ADD KEY `AthleteForKey` (`Athlete_Id`); ALTER TABLE `result`  
+MODIFY `Result_Id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;  
+ALTER TABLE `result`  
+ADD CONSTRAINT `Result_AthleteForKey` FOREIGN KEY (`Athlete_Id`) REFERENCES `athlete` (`Athlete_Id`) ON DELETE CASCADE ON UPDATE NO ACTION,  
+ADD CONSTRAINT `Result_EventForKey` FOREIGN KEY (`Event_Id`) REFERENCES `event` (`Event_Id`) ON DELETE CASCADE ON UPDATE NO ACTION;  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/25a3721f-2574-4f57-839b-bfbc8bfb5abd)  
+<br>
+![image](https://github.com/agnivon/SEMS/assets/122620788/184b224e-307a-4b07-9c3f-dc2dd1d470e6)  
+
+
 
 
 
