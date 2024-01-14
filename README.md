@@ -168,6 +168,27 @@ ADD CONSTRAINT `Result_EventForKey` FOREIGN KEY (`Event_Id`) REFERENCES `event` 
 ![image](https://github.com/agnivon/SEMS/assets/122620788/25a3721f-2574-4f57-839b-bfbc8bfb5abd)  
 <br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/184b224e-307a-4b07-9c3f-dc2dd1d470e6)  
+The result table consists of all the results obtained by the athletes after they have completed in their events. The attributes contained are Result_Id, Event_Id, Event_Name, Athlete_Id, Medal_Type, Total_Time.  
+ 
+ 
+SPONSOR TABLE:  
+
+
+CREATE TABLE `sponsor` (  
+`Sponsorship_Id` int(4) NOT NULL,  
+`Sponsor_Name` varchar(20) NOT NULL,  
+`Athlete_Id` int(4) NOT NULL,  
+`Sponsorship_Amount` int(8) NOT NULL,  
+`Sponsorship_Manager` varchar(25) DEFAULT NULL  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
+
+
+ALTER TABLE `sponsor`  
+ADD PRIMARY KEY (`Sponsorship_Id`),  
+ADD KEY `AthleteForKey` (`Athlete_Id`) USING BTREE; ALTER TABLE `sponsor`  
+MODIFY `Sponsorship_Id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;  
+ALTER TABLE `sponsor`  
+ADD CONSTRAINT `Sponsor_AthleteForKey` FOREIGN KEY (`Athlete_Id`) REFERENCES `athlete` (`Athlete_Id`) ON DELETE CASCADE;  
 
 
 
