@@ -192,7 +192,9 @@ ADD CONSTRAINT `Sponsor_AthleteForKey` FOREIGN KEY (`Athlete_Id`) REFERENCES `at
 <br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/27e45ada-73be-433b-b5a0-408a337121b0)
 <br>
+<br>
 ![image](https://github.com/agnivon/SEMS/assets/122620788/bf6fa07c-97e3-4ef9-8f22-55f69c6744b7)
+<br>
 The sponsor table contains all information about all the entities sponsoring the athletes. The attributes consist of Sponsorship_Id, Sponsor_Name, Athlete_Id, Sponsorship_Amount and Sponsorship_Manager.
   
 # SOURCE CODE:  
