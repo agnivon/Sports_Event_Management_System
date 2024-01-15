@@ -1036,7 +1036,57 @@ echo "<script>alert('Successfully updated')</script>"; header(sprintf('location:
 }else{  
 print "Error while updating data...!";  
 }  
-?>  
+?> 
+<br>
+# SQL TRIGGER:
+
+
+INSERT AND UPDATE EVENT TRIGGER  
+CREATE TRIGGER `InsertEventTrigger` AFTER INSERT ON `event` FOR EACH ROW IF ((SELECT Event_Name FROM record WHERE Event_Name=new.Event_Name) IS NULL) THEN  
+INSERT into record (Event_Name, Event_Type) VALUES (new.Event_Name, new.Event_Type);  
+END IF  
+
+CREATE TRIGGER `UpdateEventTrigger` AFTER UPDATE ON `event` FOR EACH ROW IF ((SELECT Event_Name FROM record WHERE Event_Name=new.Event_Name) IS NULL) THEN  
+INSERT into record (Event_Name, Event_Type) VALUES (new.Event_Name, new.Event_Type);  
+END IF  
+INSERT AND UPDATE RESULT TRIGGER  
+CREATE TRIGGER `InsertResultTrigger` AFTER INSERT ON `result` FOR EACH ROW UPDATE record  
+SET Result_Id=new.Result_Id,  
+Event_Name=new.Event_Name, Athlete_Id=new.Athlete_Id,  
+Record_Time=new.Total_Time  
+WHERE Event_Name=new.Event_Name AND  
+Event_Type IN ('T','F') AND new.Total_Time < Record_Time  
+ 
+ 
+
+CREATE TRIGGER `UpdateResultTrigger` AFTER UPDATE ON `result` FOR EACH ROW UPDATE record  
+SET Result_Id=new.Result_Id,  
+Event_Name=new.Event_Name, Athlete_Id=new.Athlete_Id,  
+Record_Time=new.Total_Time  
+WHERE Event_Name=new.Event_Name AND  
+Event_Type IN ('T','F') AND new.Total_Time < Record_Time  
+<br>
+# STORED PROCEDURE:  
+
+
+TOTAL SPONSORSHIP STORED PROCEDURE:  
+CREATE DEFINER=`root`@`localhost` PROCEDURE `TSponAmt` () SELECT SUM(Sponsorship_Amount) FROM sponsor  
+<br>
+# RESULTS & SCREENSHOTS  
+ 
+
+
+## INDEX PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/f342fbea-f67b-4439-80f5-3e3b9ab3b0a5)
+This page gives a description of the SEMS and has two buttons one for the administrator to login and the other for the user to just view the contents.  
+<br>
+## LOGIN PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/04c8a91b-8344-4449-99a4-cc9110029335)  
+This Page is the login page for the administrator. Here he/she enters his/her credentials and these credentials are checked against the data stored in the database if it matches, he/she is logged in to the system and allowed to insert, delete and update entries in the database.  
+
+
+
+
 
 
 
