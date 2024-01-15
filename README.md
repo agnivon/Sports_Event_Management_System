@@ -1077,7 +1077,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `TSponAmt` () SELECT SUM(Sponsorship
 
 
 ## INDEX PAGE:  
-![image](https://github.com/agnivon/SEMS/assets/122620788/f342fbea-f67b-4439-80f5-3e3b9ab3b0a5)
+![image](https://github.com/agnivon/SEMS/assets/122620788/f342fbea-f67b-4439-80f5-3e3b9ab3b0a5)  
 This page gives a description of the SEMS and has two buttons one for the administrator to login and the other for the user to just view the contents.  
 <br>
 ## LOGIN PAGE:  
