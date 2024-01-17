@@ -1083,6 +1083,33 @@ This page gives a description of the SEMS and has two buttons one for the admini
 ## LOGIN PAGE:  
 ![image](https://github.com/agnivon/SEMS/assets/122620788/04c8a91b-8344-4449-99a4-cc9110029335)  
 This Page is the login page for the administrator. Here he/she enters his/her credentials and these credentials are checked against the data stored in the database if it matches, he/she is logged in to the system and allowed to insert, delete and update entries in the database.  
+<br>
+## REGISTER PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/e2f9b899-db07-41f3-aa7f-a7544872012d)  
+The registration page allows registration for new administrators.  
+<br>  
+## HOME PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/bbcb66ed-d26e-481c-b612-8819c9530383)  
+This page provides the administrator with six buttons using which he can view the contents under that table and insert, delete or update in the contents of that table. Users can just view the information without having access for modifications.  
+<br>  
+## VIEW DATA PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/73309cfd-6c3a-423f-852f-f4c6c5dac82e)  
+This page allows you to view all the data according to the category selected by the viewer on the home page. Only the administrator has edit, delete or create entry access on this page.  
+<br>  
+## INSERT DATA PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/8b003a08-71d3-497e-95ef-71f7981e9ebc)  
+This page allows the administrator to enter details for new entry according to the table selected on the view data page.  
+<br>  
+## UPDATE DATA PAGE:  
+![image](https://github.com/agnivon/SEMS/assets/122620788/410c74fb-2018-4380-a6a4-77bd31c7a643)  
+This page allows the administrator to modify the details for an existing entry according to the table selected on the view data page.  
+<br>  
+
+
+
+
+
+
 
 
 
