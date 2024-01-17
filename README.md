@@ -1104,6 +1104,37 @@ This page allows the administrator to enter details for new entry according to t
 ![image](https://github.com/agnivon/SEMS/assets/122620788/410c74fb-2018-4380-a6a4-77bd31c7a643)  
 This page allows the administrator to modify the details for an existing entry according to the table selected on the view data page.  
 <br>  
+# CONCLUSION AND FUTURE SCOPE
+
+
+The SEMS website creates an online platform for users to view sporting events details by choice. It maintains records of the events and allows easy access in viewing and retrieving specific records on requirement. It aims to avoid the overhead of maintaining physical records which are prone to wear and tear and not easily editable.
+Further the project reduces the manpower required for this job. This also helps in having accurate data storage. With the help of this we can upload and access any data or information regarding the athlete, event and other details any time. This will also reduce the damages done to the data unexpectedly. The features of this introducing system will call upon the problems that are encountered in the current system.
+The project teaches us the essential skills like:
+
+●	Understanding the database handling and query processing.
+●	Implement, analyse and evaluate the project developed for an application.
+●	Demonstrate the working of different concepts of DBMS.
+
+
+## FUTURE SCOPE
+The system is designed in such a way that provisions can be given for further enhancement without affecting the system presently developed. The enhancements that can be incorporated are:
+•	Linking the Athlete Names with their Instagram Profiles
+•	Linking the Events with the Ticket Booking System
+•	Linking Sponsors with their product website
+ 
+ 
+# REFERENCES
+
+
+[1]	https://www.php.net/
+[2]	https://schoolsofweb.com/
+[3]	https://www.geeksforgeeks.org/
+[4]	https://www.w3schools.com/
+[5]	https://www.tutorialspoint.com/
+[6]	https://www.binarytides.com/
+[7]	https://stackoverflow.com/
+[8]	Database System Model, Languages, Design and Application Programming, Ramez Elmasri and Shamkant B. Navathe, 7th edition, 2017, Pearson.
+[9]	Database Management System, Ramkrishnan, and Gehrke, 3rd edition, 2014, Mc- GrawHill.
 
 
 
